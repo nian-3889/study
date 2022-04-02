@@ -41,7 +41,3 @@ x = 3
 y = 2
 z = x % y
 document.write(z)
-
-
-
-//증감연산자
