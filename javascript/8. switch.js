@@ -26,9 +26,39 @@ switch (x) {
         break;
     case 4:
         alert('비교하려는 값과 일치합니다.');
-        break
+        break;
     case 5:
         alert('비교하려는 값보다 큽니다.')
+        break;
     default:
         alert('어떤 값인지 파악이 되지 않습니다.')
+}
+
+//여러개 케이스를 묶는 경우도 가능
+//출처 : ko.javascript.info
+switch (browser) {
+    case 'Edge':
+        alert("Edge를 사용하고 계시네요!");
+        break;
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+        alert('저희 서비스가 지원하는 브라우저를 사용하고 계시네요.');
+        break;
+    default:
+        alert('현재 페이지가 괜찮아 보이길 바랍니다!');
+}
+
+//위의 switch문을 if로 바꾸면 아래와 같다.
+if (browser == 'Edge') {
+    alert('Edge를 사용하고 계시네요!')
+} else if (
+    browser == 'Chrome' ||
+    browser == 'Firefox' ||
+    browser == 'Safari' ||
+    browser == 'Opera') {
+    alert('저희 서비스가 지원하는 브라우저를 사용하고 계시네요.')
+} else {
+    alert('현재 페이지가 괜찮아 보이길 바랍니다!')
 }
