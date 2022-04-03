@@ -10,6 +10,14 @@ document.write(typeof(hi))
 let num = 1
 document.write(typeof(num))
 
+//NaN : Not a Number
+//자바스크립트에서 숫자가 아닌 값을 출력할 때 나오는 타입.
+//숫자를 구분하기 위해 쓰는 변수는 isNaN(값)을 사용하면 된다.
+let x = 4
+let y = '4'
+document.write(isNaN(x))
+document.write(isNaN(y))
+
 //boolean : 불리언 혹은 불 자료형. 쉽게 말하자면 참 거짓만 있는 형태.
 //true(참)와 false(거짓)로 구성.
 let eat = true
