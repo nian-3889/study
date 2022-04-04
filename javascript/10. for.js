@@ -11,10 +11,35 @@ for(let i = 0; i < 10; i++) {
     console.log(i);
 }
 
+let x = 9
+for (i = 1; i < x; i ++) {
+    console.log(`${i} * ${x} = ${x * i}`)}
+
+
 //이중 for문
+document.write(`for ([초기값]; [조건문]; [증감문])
+                    첫번째 for문 실행문 *생략 가능
+                    for ([초기값]; [조건문]; [증감문]
+                        두번째 for문 실행문`)
+
+//예시
+let num1 = prompt(Number(num1))
+let num2 = prompt(Number(num2))
+
+for (i = 1; i < num1; i++) {
+    for (j = 1; j < num2; j++) {
+        console.log(`${i} * ${j} = ${i * j}`)
+    }
+}
+
 
 
 //for in문
+document.write(`for(const key in 객체) {
+                    반복문}`)
+
+//예시
+// const
 
 
 //for of문
