@@ -32,7 +32,6 @@ for (i = 1; i < num1; i++) {
     }
 }
 
-
 //for문 + if문 예시
     for (let num = 1; num < 21; num ++) {
         if(num % 2 === 0) {
