@@ -33,13 +33,15 @@ for (i = 1; i < num1; i++) {
 }
 
 
+//for문 + if문 예시
+    for (let num = 1; num < 21; num ++) {
+        if(num % 2 === 0) {
+            console.log(`숫자 ${num}은 짝수입니다.`)
+        } else {
+            console.log(`숫자 ${num}은 홀수입니다.`)
+        }
+    }
 
-//for in문
-document.write(`for(const key in 객체) {
-                    반복문}`)
-
-//예시
-// const
 
 
-//for of문
+//for in문, for of문 준비중입니다.
