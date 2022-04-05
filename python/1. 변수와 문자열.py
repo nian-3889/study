@@ -65,3 +65,18 @@ print(a * b) #곱셈
 print(a ** b) #제곱
 print(a / b) #나눗셈
 print(a % b) #나머지
+
+#복합대입연산자
+number = 100
+number += 10 #덧셈 후 대입
+number -= 20 #뺄셈 후 대입
+number *= 30 #곱셈 후 대입
+number /= 40 #나눈 후 대입
+number %= 50 #숫자의 나머지를 구한 후 대입
+number **= 2 #숫자를 제곱 후 대입
+print(number) #출력
+
+
+#input : 사용자 입력
+input('인사말을 입력하세요')
+print(input())
