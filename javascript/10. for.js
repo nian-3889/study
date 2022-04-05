@@ -40,7 +40,3 @@ for (i = 1; i < num1; i++) {
             console.log(`숫자 ${num}은 홀수입니다.`)
         }
     }
-
-
-
-//for in문, for of문 준비중입니다.
