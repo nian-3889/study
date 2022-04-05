@@ -54,3 +54,14 @@ print(z[:2])
 #문자열의 길이도 구할 수 있음
 #자바스크립트는 변수명.length
 print(len(z))
+
+
+#사칙연산
+a = 10
+b = 5
+print(a + b) #덧셈
+print(a - b) #뺄셈
+print(a * b) #곱셈
+print(a ** b) #제곱
+print(a / b) #나눗셈
+print(a % b) #나머지
