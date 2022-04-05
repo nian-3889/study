@@ -40,3 +40,23 @@ delete user["like birds"];
 let user_in = {};
 console.log(user_in.noSuchProperty === undefined);
 //*.noSuchProperty : 프로퍼티가 존재하지 않는지 확인하는 메서드
+
+//for in 반목문
+//사용법
+document.write(`
+    for (key in object) {
+        실행문
+    }
+`)
+
+//예시
+let user_forIn = {
+    name: "John",
+    age: 30,
+    isAdmin: true,
+}
+
+for (let key in user) {
+    console.log(key);
+    console.log(user[key]);
+}
