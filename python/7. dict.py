@@ -36,3 +36,33 @@ print("origin: {0}".format(dictionary["origin"]))
 #값을 변경
 dictionary["name"] = "8D 건조 망고"
 print("name: {0}".format(dictionary["name"]))
+
+
+#---------------------------------
+
+## 딕셔너리 값 추가(제거)하기
+
+#추가하기
+dictionary["price"] = 5000
+print(dictionary)
+
+#제거하기 *값까지 지워버림
+del dictionary["ingredient"]
+print(dictionary)
+
+##예시
+
+#변수 만들기
+dict_b = {}
+print(f"요소 추가 이전 : {dict_b}")
+
+#값 추가하기
+dict_b["name"] = "이름"
+dict_b["head"] = "머리"
+dict_b["body"] = "몸"
+print(dict_b)
+
+#값 제거하기 
+del dict_b["body"]
+
+print(dict_b)
