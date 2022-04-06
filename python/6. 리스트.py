@@ -46,3 +46,13 @@ print(list_c)
 #사용법 : 리스트명.insert(넣을 위치, 요소)
 list_c.insert(0, 3)
 print(list_c)
+
+#요소 제거하기 : del
+del list_c[0]
+print(list_c)
+
+#요소 제거하기 : pop
+#위치값을 주지 않으면 맨 마지막 요소를 삭제
+list_c.pop(1)
+list_c.pop()
+print(list_c)
