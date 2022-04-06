@@ -56,3 +56,25 @@ print(list_c)
 list_c.pop(1)
 list_c.pop()
 print(list_c)
+
+#요소 제거하기 : remove
+##위치가 아닌 값으로 제거하는 방법
+list_c.remove(7)
+print(list_c)
+
+#요소 제거하기 : clear()
+##리스트 안의 내용을 모두 제거할 때 사용
+list_c.clear()
+print(list_c)
+
+
+#--------------------
+#리스트 안의 내용 찾기 : in(not in)
+##사용법 : 값 (not) in 연산자
+
+list_d = [273, 32, 103, 57, 52]
+print(273 in list_d)
+print(32 in list_d)
+
+print(99 not in list_d)
+print(273 not in list_d)
