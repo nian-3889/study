@@ -78,3 +78,21 @@ print(32 in list_d)
 
 print(99 not in list_d)
 print(273 not in list_d)
+
+
+
+#for in list 사용법
+print("""
+for 반복자 in 반복할 수 있는 것(list):
+    실행문
+""")
+
+array = [273, 32, 103, 57, 52]
+for element in array:
+    print(element)
+
+#문자열도 가능
+for char in "안녕하세요":
+    print("-", char)
+
+#추가적인건 for문으로 확인바람
