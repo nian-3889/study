@@ -64,8 +64,34 @@ print(dict_b)
 
 #값 제거하기 
 del dict_b["body"]
-
 print(dict_b)
 
+#------------------
 
-##
+#key in dictionary
+
+dictionary_a = {
+    "name": "7D 건조 망고",
+    "type": "당절임",
+    "ingredient": ["망고", "설탕", "메타중아황산나트륨", "치자황색소"],
+    "origin": "필리핀"
+}
+
+#사용자로부터 입력을 받기.
+key = input()
+
+if key in dictionary_a:
+    print(dictionary_a[key])
+else:
+    print("존재하지 않은 키에 접근하고 있습니다.")
+
+
+#get()함수로 가져와보기
+
+value = dictionary_a.get("ㅇㅂㅇ")
+print(f"값: {value}")
+
+if value == None:
+    print("존재하지 않는 키에 접근했었습니다.")
+
+#--------------
