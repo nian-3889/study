@@ -95,4 +95,22 @@ for element in array:
 for char in "안녕하세요":
     print("-", char)
 
-#추가적인건 for문으로 확인바람
+
+#리스트 내부 요소 별 종류 및 갯수 구하기
+
+#1. 함수를 만들기
+test_lst = [1,2,3,4,1,2,2,3,4,4,5,6,1,2,3,1,2,1,6,6,6,6,6,2]
+
+def count_into_lst(lst):
+    answer=dict()
+    for num in test_lst:
+        if num not in answer.keys():
+            answer[num]=1
+        else:
+            answer[num]+=1
+    return answer
+count_into_lst(test_lst)
+
+#2. collection library를 사용하기
+from collections import Counter
+Counter(test_lst)
