@@ -32,3 +32,12 @@ for element in arr:
 
 for i in range(len(arr)):
     print(f"{i}번째 반복: {arr[i]}")
+
+
+#반대로 반복하기
+#예시
+for i in range(4, 0-1, -1):
+    print(f"현재 반복 변수 : {i}")
+
+for i in reversed(5):
+    print(f"현재 반복 변수 : {i}")
