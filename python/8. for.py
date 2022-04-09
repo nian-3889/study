@@ -1,4 +1,7 @@
 #range()
+from unittest import result
+
+
 print("1. range(x) : x-1까지")
 print("2. range(x, y) : x부터 y-1까지")
 print("3. range(x, y, z) : x부터 y-1까지, 증감은 z값")
@@ -39,5 +42,47 @@ for i in range(len(arr)):
 for i in range(4, 0-1, -1):
     print(f"현재 반복 변수 : {i}")
 
-for i in reversed(5):
-    print(f"현재 반복 변수 : {i}")
+#응용
+marks = [90, 25, 67, 45, 80]
+
+number = 0
+
+for mark in marks:
+    number = number +1
+    if mark >= 60:
+        print(f"{number}번 학생은 합격입니다.")
+    else:
+        print(f"{number}번 학생은 불합격입니다.")
+
+
+#for문과 continue
+#continue : 일부 코드 건너뛰어 실행하는 문구
+for i in range(20):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+marks2 = [90, 25, 67, 45, 80]
+
+number2 = 0
+for mark2 in marks2:
+    number2 = number2 + 1
+    if mark2 < 60:
+        continue
+    print(f"{number2}번 학생 축하합니다. 합격입니다.")
+
+    #for와 range()를 이용한 구구단
+
+    for i in range(2, 10):
+        for j in range(1, 10):
+            print(i * j, end=" ")
+
+
+#리스트 안에 for문을 포함하는 경우
+
+a = [1, 2, 3, 4]
+result = []
+
+for num in a:
+    result.append(num*3)
+print(result)
