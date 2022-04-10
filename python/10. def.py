@@ -76,3 +76,43 @@ print(result)
 
 result_mul = add_mul('mul', 1, 2, 3, 4, 5)
 print(result_mul)
+
+
+#함수 안에서 선언한 변수의 효력은 함수 내에서만 미친다.
+a = 1
+def vartest(a):
+    a = a + 1
+
+vartest(a)
+print(a)
+
+#함수 안에서 함수 밖의 변수를 변경하는 법
+##1. return 사용하기
+b = 1
+def vartest_b(b):
+    b = b + 1
+    return b
+
+#b가 vartest_b 함수의 결괏값으로 바뀜.
+b = vartest_b(b)
+print(b)
+
+#2. global 명령어 사용하기
+
+c = 1
+def vartest_c():
+    global c
+    c = c + 1
+
+vartest_c()
+print(c)
+
+
+#lambda
+#def와 동일한 기능을 함.
+#간결하게 만들 때, def를 사용할 수 없을 때 사용
+
+add = lambda a, b : a + b
+result_add = add(3, 4)
+
+print(result_add)
